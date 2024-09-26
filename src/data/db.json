@@ -1,16 +1,3 @@
-# Ứng dụng Quản lý Sách - Demo Khóa Học ReactJS
-
-Ứng dụng Quản lý Sách là một ứng dụng demo được phát triển trong khuôn khổ khóa học ReactJS của tôi. Ứng dụng sử dụng `json-server` làm Mock API để dễ dàng quản lý dữ liệu sách. Với `React-Bootstrap`, giao diện trở nên thân thiện và trực quan hơn. Bạn có thể sử dụng `Formik` để quản lý form và kiểm tra tính hợp lệ của dữ liệu. Để thông báo cho người dùng, ứng dụng tích hợp `react-toastify`. Cuối cùng, `axios` được sử dụng để thực hiện các yêu cầu HTTP một cách hiệu quả. Hãy cùng khám phá và nâng cao kỹ năng lập trình của bạn với ReactJS qua ứng dụng này!
-
-## Install JSON Server
-
-```
-npm install -g json-server@0.17.4
-```
-
-### Create a data/db.json file with some data
-
-```json
 {
   "books": [
     {
@@ -52,6 +39,14 @@ npm install -g json-server@0.17.4
       "publishedYear": 1990,
       "genreId": 3,
       "price": 10.5
+    },
+    {
+      "title": "Test",
+      "authorId": "1",
+      "genreId": "1",
+      "publishedYear": "1995",
+      "price": "1000",
+      "id": "5826bfc6-e4be-4a92-a695-d63c63929090"
     }
   ],
   "genres": [
@@ -87,32 +82,3 @@ npm install -g json-server@0.17.4
     }
   ]
 }
-```
-
-### Start JSON Server
-
-```
-json-server --watch --port 3004 data/db.json
-```
-
-## Install axios
-
-Sử dụng gói này để call các API
-
-```
-npm i axios
-```
-
-## Install react-toastify
-
-```
-npm install --save react-toastify
-```
-
-## Install uuid
-
-Để tạo ra mã id tự động
-
-```
-npm install uuid
-```
